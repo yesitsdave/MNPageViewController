@@ -10,6 +10,8 @@
 
 @implementation MNQueuingScrollView
 
+@dynamic delegate;
+
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin;
