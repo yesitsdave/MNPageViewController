@@ -21,4 +21,7 @@
 
 @property(nonatomic,weak) id <MNQueuingScrollViewDelegate> delegate;
 
+- (void)pageForward;
+- (void)pageBackward;
+
 @end

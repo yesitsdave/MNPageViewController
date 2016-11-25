@@ -22,6 +22,16 @@
     return self;
 }
 
+- (void)pageForward {
+    
+    [self setContentOffset:CGPointMake(self.bounds.size.width*2.f,0) animated:YES];
+}
+
+- (void)pageBackward {
+    
+    [self setContentOffset:CGPointMake(0,0) animated:YES];
+}
+
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
     
